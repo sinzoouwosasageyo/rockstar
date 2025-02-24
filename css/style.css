@@ -1,0 +1,1725 @@
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+body {
+  color: #111;
+}
+
+section {
+  word-break: break-word;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  transition: 0.2s linear;
+  z-index: 10;
+}
+header::after {
+  content: "";
+  width: 100%;
+  height: 0;
+  background-color: rgba(17, 17, 17, 0.95);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: height 0.3s;
+}
+header .container {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  padding: 0 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+}
+header .container .logo {
+  width: 58px;
+}
+header .container .logo .logo_img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+header .container .header1 .gnb {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+header .container .header1 .gnb > li {
+  font-family: "klavika-medium";
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0 30px;
+  height: 100px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+header .container .header1 .gnb > li .sub_menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  padding-top: 110px;
+  font-size: 1rem;
+}
+header .container .header1 .gnb > li .sub_menu a {
+  display: block;
+  padding-bottom: 16px;
+}
+header .container .language {
+  position: relative;
+  width: 40px;
+  margin: 0 0 -20px 0;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  transition: all 0.3s;
+  color: #111;
+  z-index: 1;
+}
+header .container .language li {
+  position: relative;
+}
+header .container .language li a {
+  font-family: "klavika-medium";
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  position: relative;
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: 400;
+}
+header .container .language li a::after {
+  content: "";
+  background: url(../images/language.svg) no-repeat;
+  width: 10px;
+  height: 7px;
+  margin: 0 0 2px 9px;
+}
+header .container .language li ul {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  background: #292929;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "klavika-medium";
+  font-weight: 600;
+  font-size: 0.89rem;
+  line-height: 0.875;
+  transition: all ease 0.2s;
+}
+header .container .language li ul li a {
+  display: block;
+  padding-bottom: 8px;
+  color: #666;
+  white-space: nowrap;
+}
+header .container .language li ul li a:hover {
+  color: #fff;
+}
+header .container .language li ul li:last-child {
+  padding-bottom: 0;
+}
+header .container .language:hover li ul {
+  height: 90px;
+  padding: 16px 20px;
+}
+header .header2 {
+  display: none;
+  position: absolute;
+  top: 42px;
+  right: 0;
+  z-index: 10;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+header .header2 .nav {
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  top: calc(50% + 6px);
+  transform: translateY(-50%);
+  right: 40px;
+  color: #fff;
+}
+header .header2 .nav .language {
+  position: relative;
+  width: 40px;
+  margin: 0 25px -20px 0;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: #111;
+  z-index: 1;
+}
+header .header2 .nav .language li {
+  list-style: none;
+  position: relative;
+  font-family: "klavika-medium", sans-serif;
+}
+header .header2 .nav .language li a {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  position: relative;
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: 500;
+}
+header .header2 .nav .language li a::after {
+  content: "";
+  background: url(../images/language.svg) no-repeat;
+  width: 10px;
+  height: 7px;
+  margin-left: 9px;
+  filter: invert(1);
+}
+header .header2 .nav .language li .language_sub_menu {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  background: #292929;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "klavika-medium", sans-serif;
+  font-weight: 600;
+  font-size: 0.89rem;
+  line-height: 0.875;
+  transition: all ease 0.2s;
+}
+header .header2 .nav .language li .language_sub_menu li a {
+  display: block;
+  padding-bottom: 8px;
+  color: #666;
+  white-space: nowrap;
+}
+header .header2 .nav .language:hover li ul {
+  height: 90px;
+  padding: 16px 20px;
+}
+header .header2 .nav .language:hover li ul li a {
+  display: block;
+  padding-bottom: 8px;
+  color: #666;
+  white-space: nowrap;
+}
+header .header2 .nav .language:hover li ul li a:hover {
+  color: #fff;
+}
+header .header2 .nav .nav-icon {
+  position: relative;
+  z-index: 10;
+  width: 29px;
+  height: 29px;
+  cursor: pointer;
+  padding-top: 14px;
+}
+header .header2 .nav .nav-icon div {
+  background-color: #111;
+  content: "";
+  display: block;
+  width: 29px;
+  height: 2px;
+  transform-origin: center center;
+  transition: all 0.2s ease-in-out;
+}
+header .header2 .nav .nav-icon::before {
+  margin-top: -8px;
+  background-color: #111;
+  content: "";
+  display: block;
+  width: 29px;
+  height: 2px;
+  transform-origin: center center;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s 0s;
+  position: absolute;
+}
+header .header2 .nav .nav-icon::after {
+  margin-top: 6px;
+  background-color: #111;
+  content: "";
+  display: block;
+  width: 29px;
+  height: 2px;
+  transform-origin: center center;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s 0s;
+  position: absolute;
+}
+header .header2 .nav .nav-icon.active div {
+  transform: scale(0);
+}
+header .header2 .nav .nav-icon.active::before {
+  margin-top: 0;
+  transform: rotate(45deg);
+  transition-delay: 0s, 0.2s;
+}
+header .header2 .nav .nav-icon.active::after {
+  margin-top: -2px;
+  transform: rotate(-45deg);
+  transition-delay: 0s, 0.2s;
+}
+header .header2 .nav .nav-icon.active {
+  filter: invert(1);
+}
+header .header2 .nav .navbar {
+  position: absolute;
+  padding: 46px 60px;
+  background: rgba(17, 17, 17, 0.9);
+  top: -40px;
+  right: -40px;
+  width: 540px;
+  height: 100vh;
+  z-index: 1;
+  display: none;
+}
+header .header2 .nav .navbar .nav_language {
+  margin-bottom: 76px;
+}
+header .header2 .nav .navbar .nav_language .logo {
+  width: 58px;
+}
+header .header2 .nav .navbar .nav_language .logo.mo {
+  display: none;
+}
+header .header2 .nav .navbar .nav_language .logo img {
+  vertical-align: middle;
+  max-width: 100%;
+  filter: invert(1);
+}
+header .header2 .nav .navbar .nav_language .pc ul {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+header .header2 .nav .navbar .nav_language .pc ul li {
+  margin-right: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #777777;
+  font-family: "klavika-medium", sans-serif;
+}
+header .header2 .nav .navbar .nav_language .pc ul li.on {
+  color: #fff;
+}
+header .header2 .nav .navbar .nav_language .pc ul li:last-child {
+  position: static;
+}
+header .header2 .nav .navbar .nav_gnb ul li {
+  max-width: 260px;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 500;
+  font-family: "klavika-medium", sans-serif;
+}
+header .header2 .nav .navbar .nav_gnb ul li a {
+  min-width: 246px;
+  display: inline-block;
+  padding-bottom: 14px;
+  white-space: nowrap;
+}
+header .header2 .nav .navbar .nav_gnb ul li .sub_menu {
+  display: none;
+  padding: 0 0 12px 15px;
+}
+header .header2 .nav .navbar .nav_gnb ul li .sub_menu li {
+  max-width: 260px;
+  font-family: "klavika-medium", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.18;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: #777;
+}
+header .header2 .nav .navbar .nav_gnb ul li.sub_open1.active > .sub_menu {
+  display: block;
+}
+header .header2 .nav .navbar .nav_gnb ul li.sub_open4.active > .sub_menu {
+  display: block;
+}
+header .header2 .nav .navbar .nav_gnb ul li.sub_open5.active > .sub_menu {
+  display: block;
+}
+header .header2 .nav .navbar .nav_gnb ul li.sub_open6.active > .sub_menu {
+  display: block;
+}
+header .header2 .nav .navbar .nav_gnb.on li {
+  color: #777;
+}
+header .header2 .nav .navbar .nav_gnb.on li:hover {
+  color: #fff;
+}
+header .header2 .nav .navbar > li:last-child {
+  position: absolute;
+  bottom: 60px;
+}
+header .header2 .nav .navbar > li:last-child .sns_list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+header .header2 .nav .navbar > li:last-child .sns_list a {
+  display: block;
+  margin-right: 12px;
+}
+header .header2 .nav .navbar > li:last-child .sns_list a img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+header .header2 .nav .nav-icon.active ~ .navbar {
+  position: fixed;
+  display: block;
+}
+
+main .visual_grid {
+  margin-bottom: 128px;
+}
+main .visual_grid .container {
+  width: 100%;
+  max-width: 1598px;
+  margin: 0 auto;
+  position: relative;
+}
+main .visual_grid .container .scroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+main .visual_grid .container .scroll .artist-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-right: -16px;
+}
+main .visual_grid .container .scroll .artist-list li:first-child {
+  position: relative;
+  width: calc(50% - 16px);
+  margin: 0 16px 16px 0;
+}
+main .visual_grid .container .scroll .artist-list li:first-child .hover-box {
+  position: relative;
+}
+main .visual_grid .container .scroll .artist-list li:first-child .hover-box .hover {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s;
+}
+main .visual_grid .container .scroll .artist-list li:first-child .hover-box .hover a {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+main .visual_grid .container .scroll .artist-list li:first-child .hover-box .hover a::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+main .visual_grid .container .scroll .artist-list li:first-child .hover-box .hover a p {
+  position: relative;
+  font-size: 3rem;
+  color: #fff;
+  font-family: "klavika-medium" !important;
+  font-weight: 700;
+  z-index: 1;
+}
+main .visual_grid .container .scroll .artist-list li:first-child .hover-box .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .visual_grid .container .scroll .artist-list li:first-child .hover-box::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transition: width 0.5s;
+  z-index: 1;
+}
+main .visual_grid .container .scroll .artist-list li:first-child .hover-box::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  transition: width 0.5s;
+  z-index: 1;
+}
+main .visual_grid .container .scroll .artist-list li:nth-child(2) {
+  position: relative;
+  width: calc(50% - 16px);
+  margin: 0 16px 16px 0;
+}
+main .visual_grid .container .scroll .artist-list li:nth-child(2) .hover-box {
+  position: relative;
+}
+main .visual_grid .container .scroll .artist-list li:nth-child(2) .hover-box .hover {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s;
+}
+main .visual_grid .container .scroll .artist-list li:nth-child(2) .hover-box .hover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+main .visual_grid .container .scroll .artist-list li:nth-child(2) .hover-box .hover a {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+main .visual_grid .container .scroll .artist-list li:nth-child(2) .hover-box .hover a::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+main .visual_grid .container .scroll .artist-list li:nth-child(2) .hover-box .hover a p {
+  position: relative;
+  font-size: 3rem;
+  color: #fff;
+  font-family: "klavika-medium" !important;
+  font-weight: 700;
+  z-index: 1;
+}
+main .visual_grid .container .scroll .artist-list li:nth-child(2) .hover-box .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .visual_grid .container .scroll .artist-list li:nth-child(2) .hover-box::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transition: width 0.5s;
+  z-index: 1;
+}
+main .visual_grid .container .scroll .artist-list li:nth-child(2) .hover-box::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  transition: width 0.5s;
+  z-index: 1;
+}
+main .visual_grid .container .scroll .artist-list li:nth-child(3) {
+  position: relative;
+  width: calc(50% - 16px);
+  margin: 0 16px 16px 0;
+}
+main .visual_grid .container .scroll .artist-list li:nth-child(3) .hover-box {
+  position: relative;
+}
+main .visual_grid .container .scroll .artist-list li:nth-child(3) .hover-box .hover {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s;
+}
+main .visual_grid .container .scroll .artist-list li:nth-child(3) .hover-box .hover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+main .visual_grid .container .scroll .artist-list li:nth-child(3) .hover-box .hover a {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+main .visual_grid .container .scroll .artist-list li:nth-child(3) .hover-box .hover a::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+main .visual_grid .container .scroll .artist-list li:nth-child(3) .hover-box .hover a p {
+  position: relative;
+  font-size: 3rem;
+  color: #fff;
+  font-family: "klavika-medium" !important;
+  font-weight: 700;
+  z-index: 1;
+}
+main .visual_grid .container .scroll .artist-list li:nth-child(3) .hover-box .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .visual_grid .container .scroll .artist-list li:nth-child(3) .hover-box::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transition: width 0.5s;
+  z-index: 1;
+}
+main .visual_grid .container .scroll .artist-list li:nth-child(3) .hover-box::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  transition: width 0.5s;
+  z-index: 1;
+}
+main .visual_grid .container .scroll .artist-list li:last-child {
+  position: relative;
+  width: calc(50% - 16px);
+  margin: 0 16px 16px 0;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -16px;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:first-child {
+  position: relative;
+  width: calc(50% - 16px);
+  margin: 0 16px 16px 0;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:first-child .hover-box {
+  position: relative;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:first-child .hover-box .hover {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:first-child .hover-box .hover a {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:first-child .hover-box .hover a::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:first-child .hover-box .hover a p {
+  position: relative;
+  font-size: 3rem;
+  color: #fff;
+  font-family: "klavika-medium" !important;
+  font-weight: 700;
+  z-index: 1;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:first-child .hover-box .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:first-child .hover-box::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transition: width 0.5s;
+  z-index: 1;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:first-child .hover-box::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  transition: width 0.5s;
+  z-index: 1;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:first-child::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transition: height 0.5s;
+  z-index: 1;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:first-child::after {
+  content: "";
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transition: height 0.5s;
+  z-index: 1;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul .none {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul .none div .btn-grid-more {
+  display: block;
+  position: relative;
+  text-align: right;
+  font-family: "klavika-medium" !important;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-right: 61px;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul .none div .btn-grid-more::after {
+  content: "";
+  background: url(../images/btn-grid-more.png) no-repeat;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-size: contain;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul .none div .btn-grid-more:hover {
+  color: #EF4023;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul .none div .btn-grid-more:hover::after {
+  background: url(../images/btn-grid-more-on.png) no-repeat;
+  background-size: contain;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:nth-child(3) {
+  position: relative;
+  width: calc(50% - 16px);
+  margin: 0 16px 16px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:last-child {
+  position: relative;
+  width: calc(50% - 16px);
+  margin: 0 16px 16px 0;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:last-child::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transition: height 0.5s;
+  z-index: 1;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:last-child::after {
+  content: "";
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transition: height 0.5s;
+  z-index: 1;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:last-child .hover-box {
+  position: relative;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:last-child .hover-box::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transition: width 0.5s;
+  z-index: 1;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:last-child .hover-box::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  transition: width 0.5s;
+  z-index: 1;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:last-child .hover-box .hover {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:last-child .hover-box .hover a {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:last-child .hover-box .hover a::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:last-child .hover-box .hover a p {
+  position: relative;
+  font-size: 3rem;
+  color: #fff;
+  font-family: "klavika-medium" !important;
+  font-weight: 700;
+  z-index: 1;
+}
+main .visual_grid .container .scroll .artist-list li:last-child ul li:last-child .hover-box .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .visual_grid .container .scroll .artist-list > li:not(:last-child)::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transition: height 0.5s;
+  z-index: 1;
+}
+main .visual_grid .container .scroll .artist-list > li:not(:last-child)::after {
+  content: "";
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transition: height 0.5s;
+  z-index: 1;
+}
+main .visual_grid .container .mo {
+  display: none;
+}
+main .visual_grid .container .mo .btn-grid-more {
+  display: block;
+  position: relative;
+  text-align: right;
+  font-family: "klavika-medium" !important;
+  font-size: 1.05rem;
+  font-weight: 400;
+  padding-right: 61px;
+}
+main .visual_section {
+  position: relative;
+}
+main .visual_section .container {
+  width: 100%;
+  max-width: 1598px;
+  margin: 0 auto;
+  position: relative;
+}
+main .visual_section .container .ly_flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "klavika-bold", sans-serif;
+}
+main .visual_section .container .ly_flex .f24 {
+  font-size: 1.5rem;
+  margin-bottom: 60px;
+}
+main .visual_section .container .visual-bg-slider {
+  width: 100%;
+  height: 880px;
+  display: flex;
+  position: relative;
+  z-index: 0;
+  transition: all 0.4s ease;
+}
+main .visual_section .container .visual-bg-slider .swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrapper .swiper-slide {
+  overflow: hidden;
+  color: #fff;
+}
+main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrapper .swiper-slide .slide-inner {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrapper .swiper-slide .slide-inner .img_link img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrapper .swiper-slide .slide-inner .img_link .mo {
+  display: none;
+}
+main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrapper .swiper-slide .slide-inner .txt_link {
+  display: block;
+  height: 100%;
+}
+main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrapper .swiper-slide .slide-inner .txt_link .text {
+  width: 100%;
+  position: absolute;
+  bottom: 195px;
+  left: 90px;
+  z-index: 1;
+  font-weight: 700;
+  font-family: "klavika-medium";
+}
+main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrapper .swiper-slide .slide-inner .txt_link .text .container {
+  width: 100%;
+  max-width: 1598px;
+  margin: 0 auto;
+  position: relative;
+}
+main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrapper .swiper-slide .slide-inner .txt_link .text .container h2 {
+  opacity: 0;
+  transform: translate3d(0, 50px, 0);
+  font-size: 3.8rem;
+  text-transform: initial;
+  transition-duration: 2000ms;
+  visibility: hidden;
+}
+main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active .slide-inner .txt_link .text .container h2 {
+  opacity: 1;
+  visibility: visible;
+  transform: translate3d(0, 0, 0);
+}
+main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrapper .swiper-slide.black {
+  color: #111;
+}
+main .visual_section .container .visual-bg-slider .swiper-container .btn_wrap {
+  position: relative;
+  bottom: 110px;
+  left: 90px;
+  z-index: 1;
+}
+main .visual_section .container .visual-bg-slider .swiper-container .btn_wrap .container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+main .visual_section .container .visual-bg-slider .swiper-container .btn_wrap .container .swiper-pagination-progressbar {
+  left: 4px;
+  position: relative;
+  max-width: 166px;
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.4);
+}
+main .visual_section .container .visual-bg-slider .swiper-container .btn_wrap .container .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #ffffff;
+}
+main .visual_section .container .visual-bg-slider .swiper-container .btn_wrap .container .btn_box {
+  position: absolute;
+  left: 193px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+main .visual_section .container .visual-bg-slider .swiper-container .btn_wrap .container .btn_box .swiper-button-prev {
+  top: 50%;
+  z-index: 10;
+  cursor: pointer;
+  background-size: 27px 44px;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: auto;
+  background-image: none;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: auto;
+  margin-top: 0;
+  outline: none;
+  display: block;
+}
+main .visual_section .container .visual-bg-slider .swiper-container .btn_wrap .container .btn_box .swiper-button-prev::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+main .visual_section .container .visual-bg-slider .swiper-container .btn_wrap .container .btn_box .swiper-button-prev::after {
+  content: "";
+  background: url(../images/prev.svg) no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .visual_section .container .visual-bg-slider .swiper-container .btn_wrap .container .btn_box .swiper-button-prev:hover::before {
+  opacity: 0.4;
+}
+main .visual_section .container .visual-bg-slider .swiper-container .btn_wrap .container .btn_box .swiper-button-next {
+  top: 50%;
+  z-index: 10;
+  cursor: pointer;
+  background-size: 27px 44px;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 10px;
+  background-image: none;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin-top: 0;
+  outline: none;
+  display: block;
+  transform: rotate(-180deg);
+  left: 0;
+}
+main .visual_section .container .visual-bg-slider .swiper-container .btn_wrap .container .btn_box .swiper-button-next::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+main .visual_section .container .visual-bg-slider .swiper-container .btn_wrap .container .btn_box .swiper-button-next::after {
+  content: "";
+  background: url(../images/prev.svg) no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .visual_section .container .visual-bg-slider .swiper-container .btn_wrap .container .btn_box .swiper-button-next:hover::before {
+  opacity: 0.4;
+}
+main .news_section {
+  padding: 150px 0;
+}
+main .news_section .container {
+  width: 100%;
+  max-width: 1598px;
+  margin: 0 auto;
+  position: relative;
+}
+main .news_section .container .ly_flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "klavika-bold", sans-serif;
+}
+main .news_section .container .ly_flex .f24 {
+  font-size: 1.5rem;
+}
+main .news_section .container .ly_flex a {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 1rem;
+  opacity: 0.4 !important;
+  font-weight: 500;
+  z-index: 1;
+  line-height: 24px;
+  transition-duration: 0s !important;
+}
+main .news_section .container .ly_flex a.btn_more::after {
+  content: "";
+  background: url(../images/btn_more.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+}
+main .news_section .container .ly_flex a.btn_more:hover {
+  opacity: 1 !important;
+  color: #ef4023;
+}
+main .news_section .container .ly_flex a.btn_more:hover::after {
+  background: url(../images/btn_more_color.svg) no-repeat;
+}
+main .news_section .container .ly_flex a.btn_more_color::after {
+  filter: invert(1);
+  position: relative;
+}
+main .news_section .container .ly_flex a.btn_more_color:hover::after {
+  filter: invert(0);
+}
+main .news_section .container .news_box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 94px -28px 0 0;
+  list-style: none;
+}
+main .news_section .container .news_box li {
+  width: calc(25% - 28px);
+  margin-right: 28px;
+}
+main .news_section .container .news_box li a span {
+  font-size: 0.78rem;
+}
+main .news_section .container .news_box li a span.cate {
+  display: none;
+  color: #ef4023;
+  font-weight: 700;
+  border: 0;
+}
+main .news_section .container .news_box li a span.date {
+  color: #888888;
+  font-weight: 500;
+  font-family: "klavika-medium", sans-serif;
+  font-size: 0.9rem;
+}
+main .news_section .container .news_box li a h3 {
+  margin: 12px 0 20px;
+  height: 60px;
+  overflow: hidden;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-family: "Pretendard-Bold", sans-serif;
+}
+main .news_section .container .news_box li a .img {
+  margin-top: 40px;
+}
+main .news_section .container .news_box li a .img img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+main .vibe_section {
+  padding-bottom: 90px;
+}
+main .vibe_section .container {
+  position: relative;
+  width: 100%;
+  max-width: 1598px;
+  margin: 0 auto;
+}
+main .vibe_section .container .ttl_box {
+  position: relative;
+  z-index: 1;
+  font-family: "klavika-medium";
+  font-style: normal;
+}
+main .vibe_section .container .ttl_box h2 {
+  font-size: 5.6rem;
+  font-weight: 800;
+  color: #111;
+  line-height: 0.9;
+  letter-spacing: 0.05em;
+}
+main .vibe_section .container .ttl_box h2 span {
+  display: block;
+}
+main .vibe_section .container .ttl_box p {
+  margin: 39px 0 89px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "klavika-light";
+}
+main .vibe_section .container .ttl_box .btn_more {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 1rem;
+  opacity: 0.4 !important;
+  font-weight: 700;
+  z-index: 1;
+  line-height: 24px;
+  transition-duration: 0s !important;
+}
+main .vibe_section .container .ttl_box .btn_more::after {
+  content: "";
+  background: url(../images/btn_more.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+  position: relative;
+  filter: invert(1);
+}
+main .vibe_section .container .ttl_box .btn_more:hover {
+  opacity: 1 !important;
+  color: #ef4023;
+}
+main .vibe_section .container .ttl_box .btn_more:hover::after {
+  background: url(../images/btn_more_color.svg) no-repeat;
+  filter: invert(0);
+}
+main .vibe_section .container .bg_slide {
+  position: relative;
+  margin: 0 0 0 auto;
+  top: -47px;
+  width: 793px;
+  text-align: right;
+  background: #000;
+  z-index: -1;
+}
+main .vibe_section .container .bg_slide::before {
+  content: "";
+  background: url(../images/vibe_cover.png) no-repeat;
+  width: calc(100% + 2px);
+  height: calc(100% + 4px);
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  left: -2px;
+  bottom: -1px;
+  z-index: 2;
+  background-size: cover;
+}
+main .bottom_section {
+  font-family: "klavika-medium";
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+main .bottom_section .bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main .bottom_section .bg.on {
+  transition: all 0.5s;
+}
+main .bottom_section .ly_flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 935px;
+}
+main .bottom_section .ly_flex.on .txt_box h3 {
+  opacity: 0.4;
+}
+main .bottom_section .ly_flex .txt_box:hover h3 {
+  opacity: 1;
+}
+main .bottom_section .ly_flex .txt_box:hover .btn_more {
+  color: #fff;
+  opacity: 1 !important;
+}
+main .bottom_section .ly_flex li:first-child {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+main .bottom_section .ly_flex li:first-child ul {
+  display: flex;
+  flex-flow: wrap;
+  height: 100%;
+}
+main .bottom_section .ly_flex li:first-child ul li:first-child {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+main .bottom_section .ly_flex li:first-child ul li:first-child .txt_box {
+  cursor: pointer;
+}
+main .bottom_section .ly_flex li:first-child ul li:first-child .txt_box a h3 {
+  font-size: 3rem;
+  margin-bottom: 60px;
+  transition: all 0.2s;
+}
+main .bottom_section .ly_flex li:first-child ul li:first-child .txt_box a .btn_more {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 1rem;
+  opacity: 0.4;
+  font-weight: 500;
+  z-index: 1;
+  line-height: 24px;
+  transition-duration: 0s !important;
+}
+main .bottom_section .ly_flex li:first-child ul li:first-child .txt_box a .btn_more::after {
+  content: "";
+  background: url(../images/btn_more.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+}
+main .bottom_section .ly_flex li:first-child ul li:last-child {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+main .bottom_section .ly_flex li:first-child ul li:last-child .txt_box {
+  cursor: pointer;
+}
+main .bottom_section .ly_flex li:first-child ul li:last-child .txt_box a h3 {
+  font-size: 3rem;
+  margin-bottom: 60px;
+  transition: all 0.2s;
+}
+main .bottom_section .ly_flex li:first-child ul li:last-child .txt_box a .btn_more {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 1rem;
+  opacity: 0.4;
+  font-weight: 500;
+  z-index: 1;
+  line-height: 24px;
+  transition-duration: 0s !important;
+}
+main .bottom_section .ly_flex li:first-child ul li:last-child .txt_box a .btn_more::after {
+  content: "";
+  background: url(../images/btn_more.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+}
+main .bottom_section .ly_flex li:last-child {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+main .bottom_section .ly_flex li:last-child .txt_box {
+  cursor: pointer;
+}
+main .bottom_section .ly_flex li:last-child .txt_box a h3 {
+  font-size: 3rem;
+  margin-bottom: 60px;
+  transition: all 0.2s;
+}
+main .bottom_section .ly_flex li:last-child .txt_box a .btn_more {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 1rem;
+  opacity: 0.4;
+  font-weight: 500;
+  z-index: 1;
+  line-height: 24px;
+  transition-duration: 0s !important;
+}
+main .bottom_section .ly_flex li:last-child .txt_box a .btn_more::after {
+  content: "";
+  background: url(../images/btn_more.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+}
+
+footer {
+  position: relative;
+  overflow: hidden;
+  padding: 69px 40px 60px;
+  background: #111111;
+}
+footer .fix_btn {
+  position: fixed;
+  right: 25px;
+  bottom: 180px;
+  z-index: 1;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+}
+footer .fix_btn.scrolled {
+  opacity: 1;
+}
+footer .fix_btn .to_top {
+  opacity: 1;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #111;
+  color: #fff;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+footer .fix_btn .to_top p {
+  position: relative;
+  padding-top: 14px;
+  font-family: "klavika-medium";
+  font-size: 1rem;
+  font-weight: 600;
+}
+footer .fix_btn .to_top p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../images/to_top.svg) no-repeat;
+  width: 14px;
+  height: 8px;
+}
+footer .footer .ly_flex:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer .ly_flex:first-child .sns_box {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+footer .footer .ly_flex:first-child .sns_box li {
+  margin-right: 12px;
+}
+footer .footer .ly_flex:first-child .sns_box li a img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+footer .footer .ly_flex:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 252px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+footer .footer .ly_flex:last-child .f_gnb {
+  color: #fff;
+  font-family: "klavika-medium";
+}
+footer .footer .ly_flex:last-child .f_gnb span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #888888;
+}
+footer .footer .ly_flex:last-child .f_gnb ul {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+footer .footer .ly_flex:last-child .f_gnb ul li a {
+  font-weight: 500;
+}
+footer .footer .ly_flex:last-child .info_box {
+  color: #888;
+  text-align: right;
+}
+footer .footer .ly_flex:last-child .info_box ul {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 32px;
+  font-weight: 700;
+}
+footer .footer .ly_flex:last-child .info_box ul li {
+  margin-left: 24px;
+  font-size: 1rem;
+}
+footer .footer .ly_flex:last-child .info_box ul li a:hover {
+  color: #fff;
+}
+footer .footer .ly_flex:last-child .info_box p {
+  font-family: "Pretendard-Medium";
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+footer .footer .ly_flex:last-child .info_box p:last-child {
+  font-family: "Pretendard-Medium";
+  margin-top: 14px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1598px) {
+  .container {
+    width: 100%;
+    padding: 0 28px;
+  }
+}
+@media (min-width: 1201px) {
+  header .container .language li a::after {
+    filter: invert(1);
+  }
+  header.over::after {
+    height: 392px;
+  }
+  header.over .logo .logo_img {
+    filter: invert(1);
+  }
+  header.over .header1 .gnb > li {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  header.over .header1 .gnb > li:hover {
+    color: rgb(255, 255, 255);
+  }
+  header.over .header1 .gnb > li .sub_menu {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    min-height: 300px;
+  }
+  header.over .header1 .gnb > li li a {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  header.over .header1 .gnb > li li:hover a {
+    color: rgb(255, 255, 255);
+  }
+  header.over .language {
+    color: #fff;
+  }
+  header.over .language li a::after {
+    filter: invert(0);
+  }
+  header.scrolled {
+    position: fixed;
+    background-color: rgba(17, 17, 17, 0.95);
+  }
+  header.scrolled .container .logo .logo_img {
+    filter: invert(1);
+  }
+  header.scrolled .container .header1 .gnb > li {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  header.scrolled .container .header1 .gnb > li:hover {
+    color: rgb(255, 255, 255);
+  }
+  header.scrolled .container .language li a {
+    color: #fff;
+  }
+  header.scrolled .container .language li a::after {
+    filter: invert(0);
+  }
+  header.scrolled .container .language li ul li a {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  header.scrolled .container .language li ul li:hover {
+    color: rgb(255, 255, 255);
+    filter: invert(1);
+  }
+}
+@media (max-width: 1200px) {
+  header .header1 {
+    display: none;
+  }
+  header .container > .language {
+    display: none;
+  }
+  header .header2 {
+    display: block;
+  }
+  main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrapper .swiper-slide .slide-inner .txt_link .text {
+    bottom: 250px;
+  }
+  main .visual_section .container .visual-bg-slider .swiper-container .btn_wrap {
+    bottom: 200px;
+  }
+  main .visual_section .container .visual-bg-slider .swiper-container .btn_wrap .container .btn_box {
+    left: 213px;
+  }
+}
+@media (max-width: 1180px) {
+  main .visual_grid .container .scroll .artist-list {
+    margin-right: 12px;
+  }
+  main .visual_grid .container .scroll .artist-list li {
+    width: calc(50% - 12px);
+    margin: 0 12px 12px 0;
+  }
+}
+@media (min-width: 768px) {
+  main .visual_grid .container .scroll .artist-list > li:not(:last-child):hover::before {
+    height: 20px;
+  }
+  main .visual_grid .container .scroll .artist-list > li:not(:last-child):hover::after {
+    height: 20px;
+  }
+  main .visual_grid .container .scroll .artist-list > li:not(:last-child):hover .hover-box::before {
+    width: 20px;
+  }
+  main .visual_grid .container .scroll .artist-list > li:not(:last-child):hover .hover-box::after {
+    width: 20px;
+  }
+  main .visual_grid .container .scroll .artist-list > li:not(:last-child):hover .hover-box .hover {
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+  main .visual_grid .container .scroll .artist-list > li:not(:last-child):hover .hover-box .hover a::before {
+    opacity: 0.8;
+  }
+  main .visual_grid .container .scroll .artist-list li:last-child ul li:hover::before {
+    height: 20px;
+  }
+  main .visual_grid .container .scroll .artist-list li:last-child ul li:hover::after {
+    height: 20px;
+  }
+  main .visual_grid .container .scroll .artist-list li:last-child ul li:hover .hover-box::before {
+    width: 20px;
+  }
+  main .visual_grid .container .scroll .artist-list li:last-child ul li:hover .hover-box::after {
+    width: 20px;
+  }
+  main .visual_grid .container .scroll .artist-list li:last-child ul li:hover .hover-box .hover {
+    opacity: 1;
+  }
+  main .visual_grid .container .scroll .artist-list li:last-child ul li:hover .hover-box .hover a::before {
+    opacity: 0.8;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'klavika-light';
+  src: url('../font/Klavika/klavika-light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'klavika-medium';
+  src: url('../font/Klavika/klavika-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'klavika-bold';
+  src: url('../font/Klavika/klavika-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard-Light';
+  src: url('../font/Pretendard/Pretendard-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('../font/Pretendard/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard-Medium';
+  src: url('../font/Pretendard/Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Rockstar';
+  src: url('../font/Rockstar/Rockstar.woff') format('woff');
+}
