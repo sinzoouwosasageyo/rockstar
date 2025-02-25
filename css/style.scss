@@ -21,7 +21,7 @@ header {
     position: absolute; top: 0; left: 0; z-index: -1; transition: height .3s;
   }
   .container {
-    width: 100%; max-width: 100%; height: 100%; padding: 0 40px; display: flex; flex-wrap: nowrap;
+    width: 100%; max-width: 100%; height: 100%; padding: 0 2.2%; display: flex; flex-wrap: nowrap;
     align-items: center; justify-content: space-between; margin: 0 auto; position: relative;
     .logo {
       width: 58px;
@@ -32,7 +32,7 @@ header {
         position: relative; display: flex; flex-wrap: nowrap; align-items: center;
         &>li {
           font-family: $font_Klavika_Medium;
-          position: relative; font-size: 1.2rem; font-weight: 400; padding: 0 30px;
+          position: relative; font-size: 1.2rem; font-weight: 400; padding: 0 1.6vw;
           height: 100px; display: flex; flex-wrap: nowrap; align-items: center;
           .sub_menu {
             display: none; position: absolute; top: 0; left: 30px; padding-top: 110px;
@@ -212,7 +212,7 @@ header {
 
 main {
   .visual_grid {
-    margin-bottom: 128px;
+    margin-bottom: 5%;
     .container {
       width: 100%; max-width: 1598px; margin: 0 auto; position: relative;
       .scroll {
@@ -234,7 +234,7 @@ main {
                     position: absolute; top:0; left: 0; opacity: 0;
                   }
                   p {
-                    position: relative; font-size: 3rem; color: #fff;
+                    position: relative; font-size: 2.5vw; color: #fff;
                     font-family: $font_Klavika_Medium!important; font-weight: 700; z-index: 1;
                   }
                 }
@@ -270,7 +270,7 @@ main {
                     position: absolute; top:0; left: 0; opacity: 0;                    
                   }
                   p {
-                    position: relative; font-size: 3rem; color: #fff;
+                    position: relative; font-size: 2.5vw; color: #fff;
                     font-family: $font_Klavika_Medium !important; font-weight: 700; z-index: 1;
                   }
                 }
@@ -306,7 +306,7 @@ main {
                     position: absolute; top:0; left: 0; opacity: 0;                    
                   }
                   p {
-                    position: relative; font-size: 3rem; color: #fff;
+                    position: relative; font-size: 2.5vw; color: #fff;
                     font-family: $font_Klavika_Medium !important; font-weight: 700; z-index: 1;
                   }
                 }
@@ -343,7 +343,7 @@ main {
                         position: absolute; top:0; left: 0; opacity: 0;                        
                       }
                       p {
-                        position: relative; font-size: 3rem; color: #fff;
+                        position: relative; font-size: 2.5vw; color: #fff;
                         font-family: $font_Klavika_Medium !important; font-weight: 700; z-index: 1;
                       }
                     }
@@ -423,7 +423,7 @@ main {
                         position: absolute; top:0; left: 0; opacity: 0;
                       }
                       p {
-                        position: relative; font-size: 3rem; color: #fff;
+                        position: relative; font-size: 2.5vw; color: #fff;
                         font-family: $font_Klavika_Medium !important; font-weight: 700; z-index: 1;
                       }
                     }
@@ -462,7 +462,7 @@ main {
       .ly_flex {
         display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
         font-family: $font_Klavika-Bold, sans-serif;
-        .f24 {font-size: 1.5rem; margin-bottom: 60px;}
+        .f24 {font-size: 2vw; margin-bottom: 60px;}
       }
       .visual-bg-slider {
         width: 100%; height: 880px; display: flex; position: relative;
@@ -488,18 +488,18 @@ main {
                 .txt_link {
                   display: block; height: 100%;
                   .text {
-                    width: 100%; position: absolute; bottom: 195px; left: 90px;
+                    width: 100%; position: absolute; bottom: 20%; left: 5.6%;
                     z-index: 1; font-weight: 700; font-family: $font_Klavika_Medium;
                     .container {
                       width: 100%; max-width: 1598px; margin: 0 auto; position: relative;
                       h2 {
-                        opacity: 0; transform: translate3d(0, 50px, 0); font-size: 3.8rem;
+                        opacity: 0; transform: translate3d(0, 50px, 0); font-size: 3.8vw;
                         text-transform: initial; transition-duration: 2000ms;
                         visibility: hidden;
                       }
                     }
                   }
-                }                
+                }
               }
               &.swiper-slide-active {
                 .slide-inner {
@@ -516,7 +516,7 @@ main {
             }
           }
           .btn_wrap {
-            position: relative; bottom: 110px; left: 90px; z-index: 1;
+            position: relative; bottom: 10%; left: 5.6%; z-index: 1;
             .container {
               display: flex; flex-wrap: nowrap; align-items: center;
               .swiper-pagination-progressbar {
@@ -583,7 +583,7 @@ main {
       .ly_flex {
         display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
         font-family: $font_Klavika-Bold, sans-serif;
-        .f24 {font-size: 1.5rem;}
+        .f24 {font-size: 2vw;}
         a {
           position: relative; display: inline-flex; flex-wrap: nowrap; align-items: center;
           font-size: 1rem; opacity: 0.4 !important; font-weight: 500;
@@ -642,12 +642,12 @@ main {
       .ttl_box {
         position: relative; z-index: 1; font-family: $font_Klavika_Medium; font-style: normal;
         h2 {
-          font-size: 5.6rem; font-weight: 800; color: #111; line-height: .9;
+          font-size: 5vw; font-weight: 800; color: #111; line-height: .9;
           letter-spacing: 0.05em;
           span {display: block;}
         }
         p {
-          margin: 39px 0 89px; font-size: 1.8rem; font-weight: 700; font-family: $font_Klavika_Light;
+          margin: 39px 0 89px; font-size: 1.5vw; font-weight: 700; font-family: $font_Klavika_Light;
         }
         .btn_more {
           position: relative; display: inline-flex; flex-wrap: nowrap; align-items: center;
@@ -699,7 +699,7 @@ main {
             .txt_box {
               cursor: pointer;
               a {
-                h3 {font-size: 3rem; margin-bottom: 60px; transition: all 0.2s;}
+                h3 {font-size: 2.5vw; margin-bottom: 60px; transition: all 0.2s;}
                 .btn_more {
                   position: relative; display: inline-flex; flex-wrap: nowrap; align-items: center;
                   font-size: 1rem; opacity: 0.4; font-weight: 500; z-index: 1;
@@ -719,7 +719,7 @@ main {
             .txt_box {
               cursor: pointer;
               a {
-                h3 {font-size: 3rem; margin-bottom: 60px; transition: all 0.2s;}
+                h3 {font-size: 2.5vw; margin-bottom: 60px; transition: all 0.2s;}
                 .btn_more {
                   position: relative; display: inline-flex; flex-wrap: nowrap; align-items: center;
                   font-size: 1rem; opacity: 0.4; font-weight: 500; z-index: 1;
@@ -741,7 +741,7 @@ main {
         .txt_box {
           cursor: pointer;
           a {
-            h3 {font-size: 3rem; margin-bottom: 60px; transition: all 0.2s;}
+            h3 {font-size: 2.5vw; margin-bottom: 60px; transition: all 0.2s;}
             .btn_more {
               position: relative; display: inline-flex; flex-wrap: nowrap; align-items: center;
               font-size: 1rem; opacity: 0.4; font-weight: 500; z-index: 1;
@@ -801,7 +801,7 @@ footer {
           font-weight: 500; line-height: 1.2; color: #888888;
         }
         ul {
-          font-size: 2.5rem; line-height: 1.2;
+          font-size: 2.2vw; line-height: 1.2;
           li {
             a {font-weight: 500;}
           }
@@ -829,7 +829,7 @@ footer {
 
 @media (max-width: 1598px) {
   .container {
-    width: 100%; padding: 0 28px;
+    width: 100%; padding: 0 20px;
   }
 }
 
@@ -954,6 +954,84 @@ footer {
   }
 }
 
+@media (max-width: 1024px) {
+  main {
+    .visual_grid {
+      .container {
+        .scroll {
+          .artist-list {
+            li {
+              .hover-box {
+                .hover {
+                  a {
+                    p {font-size: 1.8rem !important;}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .visual_section {
+      .container {
+        .ly_flex {
+          .f24 {font-size: 2.5rem; margin-bottom: 30px;}
+        }
+        .visual-bg-slider {
+          height: 600px;
+        }
+      }
+    }
+    .news_section {
+      .container {
+        .ly_flex {
+          .f24 {font-size: 2.5rem; margin-bottom: 30px;}
+        }
+        .news_box {
+          margin-top: 30px;
+        }
+      }
+    }
+    .bottom_section {
+      .ly_flex {
+        li:first-child {
+          ul {
+            li:first-child {
+              .txt_box {
+                a {
+                  h3 {font-size: 4vw;}
+                }
+              }
+            }
+            li:last-child {
+              .txt_box {
+                a {
+                  h3 {font-size: 4vw;}
+                }
+              }
+            }
+          }
+        }
+        li:last-child {
+          .txt_box {
+            a {
+              h3 {font-size: 4vw;}
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .footer {
+      .ly_flex:last-child {
+        margin-top: 80px;
+      }
+    }
+  }
+}
+
 @media (min-width: 768px) {
   main {
     .visual_grid {
@@ -994,6 +1072,300 @@ footer {
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    .visual_grid {
+      .container {
+        .scroll {
+          .artist-list {
+            li {
+              .hover-box {
+                .hover {
+                  a {
+                    p {font-size: 1.3rem !important;}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .visual_section {
+      .container {
+        .ly_flex {
+          .f24 {font-size: 2.5rem; margin-bottom: 10px;}
+        }
+        .visual-bg-slider {
+          height: 450px;
+          .swiper-container {
+            .swiper-wrapper {
+              .swiper-slide {
+                .slide-inner {
+                  .txt_link {
+                    .text {bottom: 30%;}
+                  }
+                }
+              }
+            }
+            .btn_wrap {
+              bottom: 20%;
+            }
+          }
+        }
+      }
+    }
+    .news_section {
+      padding: 60px 0;
+      .container {
+        .news_box {
+          margin-top: 0px;
+          li {
+            a {
+              h3 {
+                margin: 0; height: 40px;
+                overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+              }
+              .img {margin-top: 20px;}
+            }
+          }
+        }
+      }
+    }
+    .vibe_section {
+      .container {
+        .ttl_box {
+          p {display: inline-block; font-size: 1rem;}
+          .btn_more {
+            margin-left: 10%;
+          }
+        }
+        .bg_slide {
+          width: 100%; text-align: left; margin: 0;
+          .swiper-wrapper {
+            .swiper-slide {
+              img {width: 100%;}
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .footer {
+      .ly_flex:last-child {
+        margin-top: 80px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    .header2 {
+      .nav {
+        .navbar {
+          width: 500px;
+        }
+      }
+    }
+  }
+
+  main {
+    .visual_grid {
+      .container {
+        .scroll {
+          .artist-list {
+            margin-right: 0;
+            li:last-child {
+              ul {
+                .none {
+                  div {
+                    .btn-grid-more {
+                      font-size: 1.5rem; padding: 0;
+                      &::after {
+                        width: 80px; height: 80px; top: 320%; right: 150%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .visual_section {
+      .container {
+        .visual-bg-slider {
+          height: 280px;
+          .swiper-container {
+            .swiper-wrapper {
+              .swiper-slide {
+                .slide-inner {
+                  .txt_link {
+                    .text {
+                      bottom: 30%;
+                      .container {
+                        h2 {font-size: 6vw;}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .btn_wrap {
+              bottom: 20%;
+            }
+          }
+        }
+      }
+    }
+    .news_section {
+      .container {
+        .news_box {
+          li {
+            a {
+              h3 {font-size: 3.5vw;}
+            }
+          }
+        }
+      }
+    }
+    .bottom_section {
+      .ly_flex {
+        height: 500px;
+      }
+    }
+  }
+  footer {
+    .footer {
+      .ly_flex:last-child {
+        margin-top: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  header {
+    .header2 {
+      .nav {
+        .navbar {
+          width: 360px;
+        }
+      }
+    }
+  }
+
+  main {
+    .visual_grid {
+      .container {
+        .scroll {
+          .artist-list {
+            margin-right: 0;
+            li:last-child {
+              ul {
+                .none {
+                  div {
+                    .btn-grid-more {
+                      font-size: 1.2rem; padding: 0;
+                      &::after {
+                        width: 50px; height: 50px; top: 280%; right: 138%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .visual_section {
+      .container {
+        .ly_flex {
+          .f24 {font-size: 6vw;}
+        }
+        .visual-bg-slider {
+          height: 200px;
+          .swiper-container {
+            .swiper-wrapper {
+              .swiper-slide {
+                .slide-inner {
+                  .txt_link {
+                    .text {
+                      bottom: 30%;
+                      .container {
+                        h2 {font-size: 6vw;}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .btn_wrap {
+              bottom: 20%;
+            }
+          }
+        }
+      }
+    }
+    .news_section {
+      padding-top: 50px;
+      .container {
+        .ly_flex {
+          .f24 {font-size: 6vw;}
+        }
+        .news_box {
+          justify-content: center; margin: 0 auto;
+          li {
+            width: 80%; margin-right: 5px;
+            a {
+              h3 {font-size: 4vw; margin: 0;}
+              span {
+                &.date {font-size: 3.5vw;}
+              }
+            }
+          }
+        }
+      }
+    }
+    .vibe_section {padding-bottom: 20px;}
+    .bottom_section {
+      .ly_flex {
+        height: 300px;
+      }
+    }
+  }
+  
+  footer {
+    padding-top: 30px;
+    .footer {
+      .ly_flex:first-child {
+        .logo {
+          width: 30%; margin: 30px auto 0;
+          img {width: 100%;}
+        }
+      }
+      .ly_flex:last-child {
+        margin-top: 50px;
+        .f_gnb {
+          ul {
+            li {font-size: 5vw;}
+          }
+        }
+        .info_box {
+          margin-top: 10%;
+          ul {
+            li {font-size: 4vw;}
           }
         }
       }

@@ -34,7 +34,7 @@ header .container {
   width: 100%;
   max-width: 100%;
   height: 100%;
-  padding: 0 40px;
+  padding: 0 2.2%;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -60,7 +60,7 @@ header .container .header1 .gnb > li {
   position: relative;
   font-size: 1.2rem;
   font-weight: 400;
-  padding: 0 30px;
+  padding: 0 1.6vw;
   height: 100px;
   display: flex;
   flex-wrap: nowrap;
@@ -395,7 +395,7 @@ header .header2 .nav .nav-icon.active ~ .navbar {
 }
 
 main .visual_grid {
-  margin-bottom: 128px;
+  margin-bottom: 5%;
 }
 main .visual_grid .container {
   width: 100%;
@@ -448,7 +448,7 @@ main .visual_grid .container .scroll .artist-list li:first-child .hover-box .hov
 }
 main .visual_grid .container .scroll .artist-list li:first-child .hover-box .hover a p {
   position: relative;
-  font-size: 3rem;
+  font-size: 2.5vw;
   color: #fff;
   font-family: "klavika-medium" !important;
   font-weight: 700;
@@ -527,7 +527,7 @@ main .visual_grid .container .scroll .artist-list li:nth-child(2) .hover-box .ho
 }
 main .visual_grid .container .scroll .artist-list li:nth-child(2) .hover-box .hover a p {
   position: relative;
-  font-size: 3rem;
+  font-size: 2.5vw;
   color: #fff;
   font-family: "klavika-medium" !important;
   font-weight: 700;
@@ -606,7 +606,7 @@ main .visual_grid .container .scroll .artist-list li:nth-child(3) .hover-box .ho
 }
 main .visual_grid .container .scroll .artist-list li:nth-child(3) .hover-box .hover a p {
   position: relative;
-  font-size: 3rem;
+  font-size: 2.5vw;
   color: #fff;
   font-family: "klavika-medium" !important;
   font-weight: 700;
@@ -686,7 +686,7 @@ main .visual_grid .container .scroll .artist-list li:last-child ul li:first-chil
 }
 main .visual_grid .container .scroll .artist-list li:last-child ul li:first-child .hover-box .hover a p {
   position: relative;
-  font-size: 3rem;
+  font-size: 2.5vw;
   color: #fff;
   font-family: "klavika-medium" !important;
   font-weight: 700;
@@ -863,7 +863,7 @@ main .visual_grid .container .scroll .artist-list li:last-child ul li:last-child
 }
 main .visual_grid .container .scroll .artist-list li:last-child ul li:last-child .hover-box .hover a p {
   position: relative;
-  font-size: 3rem;
+  font-size: 2.5vw;
   color: #fff;
   font-family: "klavika-medium" !important;
   font-weight: 700;
@@ -926,7 +926,7 @@ main .visual_section .container .ly_flex {
   font-family: "klavika-bold", sans-serif;
 }
 main .visual_section .container .ly_flex .f24 {
-  font-size: 1.5rem;
+  font-size: 2vw;
   margin-bottom: 60px;
 }
 main .visual_section .container .visual-bg-slider {
@@ -989,8 +989,8 @@ main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrap
 main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrapper .swiper-slide .slide-inner .txt_link .text {
   width: 100%;
   position: absolute;
-  bottom: 195px;
-  left: 90px;
+  bottom: 20%;
+  left: 5.6%;
   z-index: 1;
   font-weight: 700;
   font-family: "klavika-medium";
@@ -1004,7 +1004,7 @@ main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrap
 main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrapper .swiper-slide .slide-inner .txt_link .text .container h2 {
   opacity: 0;
   transform: translate3d(0, 50px, 0);
-  font-size: 3.8rem;
+  font-size: 3.8vw;
   text-transform: initial;
   transition-duration: 2000ms;
   visibility: hidden;
@@ -1019,8 +1019,8 @@ main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrap
 }
 main .visual_section .container .visual-bg-slider .swiper-container .btn_wrap {
   position: relative;
-  bottom: 110px;
-  left: 90px;
+  bottom: 10%;
+  left: 5.6%;
   z-index: 1;
 }
 main .visual_section .container .visual-bg-slider .swiper-container .btn_wrap .container {
@@ -1150,7 +1150,7 @@ main .news_section .container .ly_flex {
   font-family: "klavika-bold", sans-serif;
 }
 main .news_section .container .ly_flex .f24 {
-  font-size: 1.5rem;
+  font-size: 2vw;
 }
 main .news_section .container .ly_flex a {
   position: relative;
@@ -1242,7 +1242,7 @@ main .vibe_section .container .ttl_box {
   font-style: normal;
 }
 main .vibe_section .container .ttl_box h2 {
-  font-size: 5.6rem;
+  font-size: 5vw;
   font-weight: 800;
   color: #111;
   line-height: 0.9;
@@ -1253,7 +1253,7 @@ main .vibe_section .container .ttl_box h2 span {
 }
 main .vibe_section .container .ttl_box p {
   margin: 39px 0 89px;
-  font-size: 1.8rem;
+  font-size: 1.5vw;
   font-weight: 700;
   font-family: "klavika-light";
 }
@@ -1368,7 +1368,7 @@ main .bottom_section .ly_flex li:first-child ul li:first-child .txt_box {
   cursor: pointer;
 }
 main .bottom_section .ly_flex li:first-child ul li:first-child .txt_box a h3 {
-  font-size: 3rem;
+  font-size: 2.5vw;
   margin-bottom: 60px;
   transition: all 0.2s;
 }
@@ -1404,7 +1404,7 @@ main .bottom_section .ly_flex li:first-child ul li:last-child .txt_box {
   cursor: pointer;
 }
 main .bottom_section .ly_flex li:first-child ul li:last-child .txt_box a h3 {
-  font-size: 3rem;
+  font-size: 2.5vw;
   margin-bottom: 60px;
   transition: all 0.2s;
 }
@@ -1441,7 +1441,7 @@ main .bottom_section .ly_flex li:last-child .txt_box {
   cursor: pointer;
 }
 main .bottom_section .ly_flex li:last-child .txt_box a h3 {
-  font-size: 3rem;
+  font-size: 2.5vw;
   margin-bottom: 60px;
   transition: all 0.2s;
 }
@@ -1551,7 +1551,7 @@ footer .footer .ly_flex:last-child .f_gnb span {
   color: #888888;
 }
 footer .footer .ly_flex:last-child .f_gnb ul {
-  font-size: 2.5rem;
+  font-size: 2.2vw;
   line-height: 1.2;
 }
 footer .footer .ly_flex:last-child .f_gnb ul li a {
@@ -1591,7 +1591,7 @@ footer .footer .ly_flex:last-child .info_box p:last-child {
 @media (max-width: 1598px) {
   .container {
     width: 100%;
-    padding: 0 28px;
+    padding: 0 20px;
   }
 }
 @media (min-width: 1201px) {
@@ -1684,6 +1684,37 @@ footer .footer .ly_flex:last-child .info_box p:last-child {
     margin: 0 12px 12px 0;
   }
 }
+@media (max-width: 1024px) {
+  main .visual_grid .container .scroll .artist-list li .hover-box .hover a p {
+    font-size: 1.8rem !important;
+  }
+  main .visual_section .container .ly_flex .f24 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  main .visual_section .container .visual-bg-slider {
+    height: 600px;
+  }
+  main .news_section .container .ly_flex .f24 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  main .news_section .container .news_box {
+    margin-top: 30px;
+  }
+  main .bottom_section .ly_flex li:first-child ul li:first-child .txt_box a h3 {
+    font-size: 4vw;
+  }
+  main .bottom_section .ly_flex li:first-child ul li:last-child .txt_box a h3 {
+    font-size: 4vw;
+  }
+  main .bottom_section .ly_flex li:last-child .txt_box a h3 {
+    font-size: 4vw;
+  }
+  footer .footer .ly_flex:last-child {
+    margin-top: 80px;
+  }
+}
 @media (min-width: 768px) {
   main .visual_grid .container .scroll .artist-list > li:not(:last-child):hover::before {
     height: 20px;
@@ -1721,5 +1752,178 @@ footer .footer .ly_flex:last-child .info_box p:last-child {
   }
   main .visual_grid .container .scroll .artist-list li:last-child ul li:hover .hover-box .hover a::before {
     opacity: 0.8;
+  }
+}
+@media (max-width: 768px) {
+  main .visual_grid .container .scroll .artist-list li .hover-box .hover a p {
+    font-size: 1.3rem !important;
+  }
+  main .visual_section .container .ly_flex .f24 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  main .visual_section .container .visual-bg-slider {
+    height: 450px;
+  }
+  main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrapper .swiper-slide .slide-inner .txt_link .text {
+    bottom: 30%;
+  }
+  main .visual_section .container .visual-bg-slider .swiper-container .btn_wrap {
+    bottom: 20%;
+  }
+  main .news_section {
+    padding: 60px 0;
+  }
+  main .news_section .container .news_box {
+    margin-top: 0px;
+  }
+  main .news_section .container .news_box li a h3 {
+    margin: 0;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  main .news_section .container .news_box li a .img {
+    margin-top: 20px;
+  }
+  main .vibe_section .container .ttl_box p {
+    display: inline-block;
+    font-size: 1rem;
+  }
+  main .vibe_section .container .ttl_box .btn_more {
+    margin-left: 10%;
+  }
+  main .vibe_section .container .bg_slide {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+  }
+  main .vibe_section .container .bg_slide .swiper-wrapper .swiper-slide img {
+    width: 100%;
+  }
+  footer .footer .ly_flex:last-child {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 500px) {
+  header .header2 .nav .navbar {
+    width: 500px;
+  }
+  main .visual_grid .container .scroll .artist-list {
+    margin-right: 0;
+  }
+  main .visual_grid .container .scroll .artist-list li:last-child ul .none div .btn-grid-more {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  main .visual_grid .container .scroll .artist-list li:last-child ul .none div .btn-grid-more::after {
+    width: 80px;
+    height: 80px;
+    top: 320%;
+    right: 150%;
+  }
+  main .visual_section .container .visual-bg-slider {
+    height: 280px;
+  }
+  main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrapper .swiper-slide .slide-inner .txt_link .text {
+    bottom: 30%;
+  }
+  main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrapper .swiper-slide .slide-inner .txt_link .text .container h2 {
+    font-size: 6vw;
+  }
+  main .visual_section .container .visual-bg-slider .swiper-container .btn_wrap {
+    bottom: 20%;
+  }
+  main .news_section .container .news_box li a h3 {
+    font-size: 3.5vw;
+  }
+  main .bottom_section .ly_flex {
+    height: 500px;
+  }
+  footer .footer .ly_flex:last-child {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 360px) {
+  header .header2 .nav .navbar {
+    width: 360px;
+  }
+  main .visual_grid .container .scroll .artist-list {
+    margin-right: 0;
+  }
+  main .visual_grid .container .scroll .artist-list li:last-child ul .none div .btn-grid-more {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+  main .visual_grid .container .scroll .artist-list li:last-child ul .none div .btn-grid-more::after {
+    width: 50px;
+    height: 50px;
+    top: 280%;
+    right: 138%;
+  }
+  main .visual_section .container .ly_flex .f24 {
+    font-size: 6vw;
+  }
+  main .visual_section .container .visual-bg-slider {
+    height: 200px;
+  }
+  main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrapper .swiper-slide .slide-inner .txt_link .text {
+    bottom: 30%;
+  }
+  main .visual_section .container .visual-bg-slider .swiper-container .swiper-wrapper .swiper-slide .slide-inner .txt_link .text .container h2 {
+    font-size: 6vw;
+  }
+  main .visual_section .container .visual-bg-slider .swiper-container .btn_wrap {
+    bottom: 20%;
+  }
+  main .news_section {
+    padding-top: 50px;
+  }
+  main .news_section .container .ly_flex .f24 {
+    font-size: 6vw;
+  }
+  main .news_section .container .news_box {
+    justify-content: center;
+    margin: 0 auto;
+  }
+  main .news_section .container .news_box li {
+    width: 80%;
+    margin-right: 5px;
+  }
+  main .news_section .container .news_box li a h3 {
+    font-size: 4vw;
+    margin: 0;
+  }
+  main .news_section .container .news_box li a span.date {
+    font-size: 3.5vw;
+  }
+  main .vibe_section {
+    padding-bottom: 20px;
+  }
+  main .bottom_section .ly_flex {
+    height: 300px;
+  }
+  footer {
+    padding-top: 30px;
+  }
+  footer .footer .ly_flex:first-child .logo {
+    width: 30%;
+    margin: 30px auto 0;
+  }
+  footer .footer .ly_flex:first-child .logo img {
+    width: 100%;
+  }
+  footer .footer .ly_flex:last-child {
+    margin-top: 50px;
+  }
+  footer .footer .ly_flex:last-child .f_gnb ul li {
+    font-size: 5vw;
+  }
+  footer .footer .ly_flex:last-child .info_box {
+    margin-top: 10%;
+  }
+  footer .footer .ly_flex:last-child .info_box ul li {
+    font-size: 4vw;
   }
 }/*# sourceMappingURL=style.css.map */
